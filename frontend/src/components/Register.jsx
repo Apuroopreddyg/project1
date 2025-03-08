@@ -35,7 +35,7 @@ const Register = () => {
     setLoading(true);
   
     try {
-      const res = await axios.post("http://localhost:5000/api/register", formData, {
+      const res = await axios.post("https://project1-front-dcgz.onrender.com/api/register", formData, {
         headers: { "Content-Type": "application/json" },
       });
   
