@@ -1,0 +1,25 @@
+### Register a new user
+POST http://localhost:5000/api/register
+Content-Type: application/json
+
+{
+  "full_name": "John carter",
+  "email": "johncart@example.com",
+  "phone_number": "915151515",
+  "college_name": "ABC University",
+  "degree": "B.Tech",
+  "year_of_study": "4th",
+  "cgpa": 8.5,
+  "tech_stack": {
+    "languages": ["JavaScript", "Python"],
+    "frameworks": ["React", "Node.js"],
+    "databases": ["MongoDB", "MySQL"]
+  },
+  "other_skills": "Cloud computing, DevOps",
+  "project_idea": "A machine learning-based fraud detection system that helps in analyzing transactions.",
+  "linkedin": "https://linkedin.com/in/johndoe",
+  "github": "https://github.com/johndoe"
+}
+
+###
+GET http://localhost:5000/api/responses
